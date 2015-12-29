@@ -12,6 +12,19 @@
     margin-left: 300px;
     /*align: center;*/
 }
+.divFull{
+    border: double;
+    border-color: #c8afe2;
+
+}
+.divChildLf{
+    width:600px;
+    float: left;
+}
+.divChildRt{
+    width:600px;
+    float: right;
+}
 label {
     width:200px;
     clear:left;
@@ -219,3 +232,17 @@ td{
 .menuUl{
     margin-left: 100px;
 }
+legend{
+    color: #c8afe2;
+    font-size: 20px;
+}
+span {
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    color: #c8afe2;
+    font-family: "Arial Rounded MT Bold","sans-serif";
+}
+/*fieldset{*/
+    /*width: 50%;*/
+/*}*/
