@@ -28,7 +28,7 @@ $(document).ready(function () {
         var today = new Date();
 
         var currentDay = new String(today.getDate());
-        var currentMonth = new String(today.getMonth()+1); //January is 0!
+        var currentMonth = new String(today.getMonth()+1);
         var currentYear = today.getFullYear();
 
         console.log(currentDay+' '+ currentDay.length);
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
 
     $("#findReservationBtn").click(function(){
-        alert("df");
+
         console.dir(this);
         var parameter = $(this).val();
         window.location = "findReservation.html?reservationId=" + parameter;
