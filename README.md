@@ -21,6 +21,10 @@
     2. Contact Us<br>
     3. Login<br>
     
+    There are some menu items like Restaurant Profile and setting, seating map, edit seating map, seating table list
+    , customer contact list etc. are not shown on the menu. This will be done once user authentication is done. For now, 
+    you can access these directly from project or from reservationsList page.
+     
 3. Home page takes you to create reservation page.
 4. The facebook icon currently takes you to the facebook page of my blog. We can put restaurant's facebook link there.
 5. contactUs.html page has contact details and map of restaurant.
@@ -29,5 +33,11 @@
 8. In reservationDetails.html page. you can change the details or delete reservation.
 9. reservationsList.html page shows list of all reservations to the owner. Edit/Delete option is provided.
    Planning to put column sorting and searching for the page.
+   10. seatingMap.html shows the map of seating arrangement. This map can be created from editSeatingMap.html page. 
+   This will be stored in db and retreived in JSON format which then will be used to recreate the map on screen.
+   In editSeatingMap.html, you can select what table type, capacity and table number.Currently addition or deletion of table 
+    rows is not yet implemented.
+ 11.contactList.html shows list of all customer contacts.
+ 12. seatingTableList.html shows list of all tables and it's details.
 
  
