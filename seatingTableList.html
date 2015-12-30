@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seating Tables List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface"  >
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body class="body">
+
+<div class="divTop">
+    <img class="image" src="images/Grapes-100.png"/>
+    <p class="logo" onmouseover="headerEffectIn(this);" onmouseout="headerEffectOut(this);">Draksha Grill</p>
+    <img class="image" src="images/Grapes-100.png"/>
+    <a href="https://www.facebook.com/helpcookinghealthrecipe/" class="fbLink">
+        <img src="images/facebook_Blue_icon.ico" alt="Facebook Link" class="image"/>
+    </a>
+</div>
+
+<div class="mainDiv">
+    <nav class="navbar">
+        <div class="container" align="center">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav clearFix menuFont menuUl">
+                    <li><a href="welcome.html">Home</a></li>
+
+                    <li class="dropdown menuFont active">
+                        <a href="#" data-toggle="dropdown">Reservations</a>
+                        <ul class="nav navbar-nav dropdown-menu subUl">
+                            <li class="dropdown"><a id="createReservationA" href="#" data-toggle="dropdown"> Create reservation</a>
+                            </li>
+                            <li class="dropdown"><a id="findReservationA" href="#" data-toggle="dropdown">Find Reservations</a></li>
+                            <li class="dropdown"><a id="reservationListA" href="#" data-toggle="dropdown">Reservation List</a> </li>
+                            <!--<li class="dropdown"><a id="cancelReservationA" href="#" data-toggle="dropdown"> Cancel Reservation</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li><a id="aboutUsA" href="aboutUs.html">About Us</a></li>
+                    <li><a id="contactUsA" href="contactUs.html">Contact Us</a></li>
+                    <li><a id="loginA" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section>
+        <table class="tableList">
+            <tr>
+
+                <th>Table No.</th>
+                <th>Size</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Confirmation code</th>
+                <th>Since</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td contenteditable="false">4</td>
+                <td contenteditable="false">Reserved</td>
+                <td contenteditable="false">12-25-2015</td>
+                <td contenteditable="false">7.30 pm</td>
+                <td contenteditable="false">122515</td>
+                <td></td>
+                <td>
+                    <button class="editBtn">Edit</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+
+                <td contenteditable="false">6</td>
+                <td contenteditable="false">Open</td>
+                <td contenteditable="false">12-25-2015</td>
+                <td contenteditable="false"></td>
+                <td contenteditable="false"></td>
+                <td></td>
+                <td>
+                    <button class="editBtn">Edit</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td contenteditable="false">3</td>
+                <td contenteditable="false">Reserved</td>
+                <td contenteditable="false">12-29-2015</td>
+                <td contenteditable="false">8 pm</td>
+                <td contenteditable="false">122915</td>
+                <td></td>
+                <td>
+                    <button class="editBtn">Edit</button>
+
+                </td>
+            </tr>
+
+        </table>
+    </section>
+</div>
+
+
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/jquery-1.11.3.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/tableList.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

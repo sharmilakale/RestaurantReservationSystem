@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Draksha Restaurant Reservation System</title>
+    <!-- For mobile first approach-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+</head>
+
+<body class="body">
+
+<div class="divTop">
+    <img class="image" src="images/Grapes-100.png"/>
+    <p class="logo">Draksha Grill</p>
+    <img class="image" src="images/Grapes-100.png"/>
+    <a href="https://www.facebook.com/helpcookinghealthrecipe/" class="fbLink">
+        <img src="images/facebook_Blue_icon.ico" alt="Facebook Link" class="image"/>
+    </a>
+</div>
+
+<div class="mainDiv">
+
+    <nav class="navbar">
+        <div class="container" align="center">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav clearFix menuFont menuUl">
+                    <li><a href="welcome.html">Home</a></li>
+
+                    <li class="dropdown menuFont active">
+                        <a href="#" data-toggle="dropdown">Reservations</a>
+                        <ul class="nav navbar-nav dropdown-menu subUl">
+                            <li class="dropdown"><a id="createReservationA" href="#" data-toggle="dropdown"> Create reservation</a>
+                            </li>
+                            <li class="dropdown"><a id="findReservationA" href="#" data-toggle="dropdown">Find Reservations</a></li>
+                            <li class="dropdown"><a id="reservationListA" href="#" data-toggle="dropdown">Reservation List</a> </li>
+                            <!--<li class="dropdown"><a id="cancelReservationA" href="#" data-toggle="dropdown"> Cancel Reservation</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li><a id="aboutUsA" href="aboutUs.html">About Us</a></li>
+                    <li><a id="contactUsA" href="contactUs.html">Contact Us</a></li>
+                    <li><a id="loginA" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="reservation" class="divParent">
+
+        <section>
+            <h2>Create a Reservation</h2>
+            <p></p>
+            <p>
+                <label for="reserveDate">Date</label>
+                <input type="date" id="reserveDate"/>
+            </p>
+            <p>
+                <label for="reserveTime">Time</label>
+                <input type="time" id="reserveTime"/>
+            </p>
+            <p>
+                <label for="partySize">Number of people</label>
+                <input type="number" id="partySize" min="1" max="12">
+            </p>
+            <p>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" pattern="/^[a-z ,.'-]+$/i" maxlength="25" required/>
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required/>
+
+            </p>
+            <p>
+                <label for="emailId">Email</label>
+                <input type="email" id="emailId" placeholder="email@example.com"/>
+            </p>
+            <p>
+                <label></label>
+                <input type="submit" class="submitTheme" value="Reserve Table"/>
+            </p>
+        </section>
+
+    </div>
+    <br><br>
+    <!--<div id="loginDiv" class="divParent">-->
+        <!--<section>-->
+            <!--<h2>Owner? Please Log In</h2>-->
+            <!--<p></p>-->
+                <!--<p>-->
+                    <!--<label for="userName">User Name</label>-->
+                    <!--<input type="email" id="userName" required placeholder="email@example.com" autofocus/>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<label for="password">Password</label>-->
+                    <!--<input type="password" id="password" required-->
+                    <!--pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"/>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<label></label>-->
+                    <!--<input type="submit" class="submitTheme" value="Login" id="btnLogin"/>-->
+                <!--</p>-->
+        <!--</section>-->
+    <!--</div>-->
+
+    <!--<div id="findReservationDiv" class="divParent">-->
+        <!--<section>-->
+            <!--<h2>Find Reservation Details</h2>-->
+            <!--<p></p>-->
+            <!--<p>-->
+                <!--<label for="reservationId">Enter reservation ID</label>-->
+                <!--<input type="number" id="reservationId" required/>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label></label>-->
+                <!--<input type="button" id="findButton" name="findButton" value="Find Reservation"  />-->
+                <!--<input type="submit" class="submitTheme" value="Find Reservation" id="findRe" onclick="loadFindRes();"/>-->
+            <!--</p>-->
+        <!--</section>-->
+    <!--</div>-->
+
+    <!--<div id="cancelReservation" class="divParent">-->
+        <!--<section>-->
+            <!--<h2>Cancel Reservation</h2>-->
+            <!--<p></p>-->
+            <!--<p>-->
+                <!--<label for="reservationId">Enter reservation ID</label>-->
+                <!--<input type="number" id="reservationId" required/>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label></label>-->
+                <!--<input type="submit" class="submitTheme" value="Cancel Reservation" id="cancelRe"-->
+                       <!--onclick="return confirm('Are you sure you want to cancel your reservation?')"/>-->
+            <!--</p>-->
+        <!--</section>-->
+    <!--</div>-->
+
+    <!--<br><br>-->
+
+    <!--<div id="changeReservation" class="divParent">-->
+        <!--<section>-->
+            <!--<h2>Change Reservation</h2>-->
+            <!--<p></p>-->
+            <!--<p>-->
+                <!--<label for="reservationIdC">Enter reservation ID</label>-->
+                <!--<input type="number" id="reservationIdC" required/>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label></label>-->
+                <!--<input type="submit" value="Change Reservation" id="changeRe"/>-->
+            <!--</p>-->
+        <!--</section>-->
+    <!--</div>-->
+
+    <!--<br><br>-->
+    <!--<form name="login" autocomplete="on">-->
+
+        <!--<div class="divParent">-->
+            <!--<p>Reserve a table</p>-->
+            <!--<p>Change reservation</p>-->
+            <!--<p>Cancel Reservation</p>-->
+        <!--</div>-->
+        <!--<div class="divParent">-->
+            <!--<p class="paraClass">Owner? Please Log In</p>-->
+            <!--<p>-->
+                <!--<label for="email">User Name</label>-->
+                <!--<input type="email" id="email" required placeholder="email@example.com" autofocus/>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label for="password">Password</label>-->
+                <!--<input type="password" id="password" required-->
+                       <!--pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"/>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<input type="submit" class="submitTheme" value="Login"/>-->
+            <!--</p>-->
+        <!--</div>-->
+    <!--</form>-->
+</div>
+<br><br>
+
+<a href="#">Go to top</a>
+
+
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/jquery-1.11.3.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+
+</html>

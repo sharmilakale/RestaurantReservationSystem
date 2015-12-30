@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface"  >
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body class="body">
+
+<div class="divTop">
+    <img class="image" src="images/Grapes-100.png"/>
+    <p class="logo" onmouseover="headerEffectIn(this);" onmouseout="headerEffectOut(this);">Draksha Grill</p>
+    <img class="image" src="images/Grapes-100.png"/>
+    <a href="https://www.facebook.com/helpcookinghealthrecipe/" class="fbLink">
+        <img src="images/facebook_Blue_icon.ico" alt="Facebook Link" class="image"/>
+    </a>
+</div>
+
+<div class="mainDiv">
+    <nav class="navbar">
+        <div class="container" align="center">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav clearFix menuFont menuUl">
+                    <li><a href="welcome.html">Home</a></li>
+
+                    <li class="dropdown menuFont active">
+                        <a href="#" data-toggle="dropdown">Reservations</a>
+                        <ul class="nav navbar-nav dropdown-menu subUl">
+                            <li class="dropdown"><a id="createReservationA" href="#" data-toggle="dropdown"> Create reservation</a>
+                            </li>
+                            <li class="dropdown"><a id="findReservationA" href="#" data-toggle="dropdown">Find Reservations</a></li>
+                            <li class="dropdown"><a id="reservationListA" href="#" data-toggle="dropdown">Reservation List</a> </li>
+                            <!--<li class="dropdown"><a id="cancelReservationA" href="#" data-toggle="dropdown"> Cancel Reservation</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li><a id="aboutUsA" href="aboutUs.html">About Us</a></li>
+                    <li><a id="contactUsA" href="contactUs.html">Contact Us</a></li>
+                    <li><a id="loginA" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section>
+        <table class="tableList">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Date</th>
+                <th>Table No.</th>
+                <th>Time</th>
+                <th>Head Count</th>
+                <th>Customer Name</th>
+                <th>Customer Phone</th>
+                <th>Customer Email</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td contenteditable="false">12-26-2015</td>
+                <td contenteditable="false">2</td>
+                <td contenteditable="false">7.00 pm</td>
+                <td contenteditable="false">4</td>
+                <td contenteditable="false">Dan Garret</td>
+                <td contenteditable="false">312-909-909</td>
+                <td contenteditable="false">dg@gmail.com</td>
+
+                <td>
+                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td contenteditable="false">12-27-2015</td>
+                <td contenteditable="false">4</td>
+                <td contenteditable="false">7.30 pm</td>
+                <td contenteditable="false">6</td>
+                <td contenteditable="false">Jessie James</td>
+                <td contenteditable="false">630-099-097</td>
+                <td contenteditable="false">jjames@yahoo.com</td>
+                <td>
+                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td contenteditable="false">3</td>
+                <td contenteditable="false">12-28-2015</td>
+                <td contenteditable="false">5</td>
+                <td contenteditable="false">8.30 pm</td>
+                <td contenteditable="false">6</td>
+                <td contenteditable="false">Krista P</td>
+                <td contenteditable="false">630-199-197</td>
+                <td contenteditable="false">pkrista@yahoo.com</td>
+                <td>
+                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn">Delete</button>
+                </td>
+            </tr>
+
+        </table>
+        <br><br>
+        <div>
+            <h3><a href="seatingMap.html" title="Will move to menu later based on authentication">Seating Map</a></h3>
+            <h3><a href="restaurantProfile.html" title="Will move to menu later based on authentication">Restaurant Profile & Settings</a></h3>
+        </div>
+    </section>
+</div>
+
+
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/jquery-1.11.3.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/tableList.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
