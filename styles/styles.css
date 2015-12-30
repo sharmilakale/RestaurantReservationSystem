@@ -69,9 +69,10 @@ input {
     width:200px;
     text-align: center;
 }
+/*TODO: fallback for font size*/
 h2{
-    font-family: 'Tangerine', serif;
-    font-size: 60px;
+    font-family: 'Tangerine', "Arial Rounded MT Bold", "sans-serif";
+    font-size: 50px;
     font-weight: bolder;
     color: #c8afe2;
     text-align: center;
@@ -243,6 +244,103 @@ span {
     color: #c8afe2;
     font-family: "Arial Rounded MT Bold","sans-serif";
 }
+.rectangleTable{
+    width:65px;
+    height:100px;
+    /*background-image:repeating-linear-gradient(0deg,darkviolet 30%,violet 40%);*/
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+.receptionTable{
+    width:100px;
+    height:65px;
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+}
+.squareTable{
+    width:75px;
+    height:65px;
+    /*background-image:repeating-linear-gradient(35deg,darkviolet 30%,violet 40%,lightgreen 30%);*/
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.roundTable {
+    width: 70px;
+    height: 70px;
+    background: violet;
+    border: 2px solid black;
+    margin : 20px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+
+}
+.sixSeatVertical{
+    width:65px;
+    height:100px;
+    /*background-image:repeating-linear-gradient(0deg,darkviolet 30%,violet 40%);*/
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+}
+.sixSeatHorizontal{
+    width:100px;
+    height:65px;
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+}
+.twoSeat{
+    width:75px;
+    height:65px;
+    /*background-image:repeating-linear-gradient(35deg,darkviolet 30%,violet 40%,lightgreen 30%);*/
+    background-color: violet;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.fourSeatCircle {
+    width: 70px;
+    height: 70px;
+    background: violet;
+    border: 2px solid black;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    display: table-cell;
+
+
+}
+
+
+
 /*fieldset{*/
     /*width: 50%;*/
 /*}*/
